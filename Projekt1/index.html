@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fejlesztés alatt</title>
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexStyleBig.css">
+        <script src="https://kit.fontawesome.com/7050e70923.js" crossorigin="anonymus"></script>
+        <body>
+            <header>
+                
+            </header>
+
+            <div class="container">
+                <nav class="nav-container">
+                    <div class="menu-bar">
+                    <button onclick="showmobilemenu()" id="menu-bar-button"><i class="fas fa-bars"></i></button>
+                    
+                    <ul class="nav-content-mobile" id="eztkell" style="display:none;">
+                        <li id="contact-icon"><a  href="#footer-container"><i class="far fa-address-card"></i></a></li>
+                        <li><a href="aboutme.html">About Me</a></li>               
+                        <li><a href="index.html">Home Page</a></li>
+                    </ul>
+
+                    <ul class="nav-content-desktop">
+                        <li id="contact-icon"><a  href="#footer-container"><i class="far fa-address-card"></i></a></li>
+                        <li><a href="aboutme.html">About Me</a></li>               
+                        <li><a href="index.html">Home Page</a></li>
+                    </ul>
+                </div>
+                </nav>
+                <div class="container-content">
+                    <h1>valamilyen cím</h1>
+                    <div class="container-content-subcim">
+                         <h4>valamilyen átirányítós subcím afkdsjfjowifjeiwfoiwemf</h4>
+                    </div>
+                    <a href="#">Contact Me!</a>
+                </div>
+
+                <div class="button-dwn">
+                    <a href="#ide"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+
+            <div class="introduction-section" id="ide">
+                <h1>Projekt munkáim</h1>
+                <h4>Nézd meg őket a GitHubon!</h4>
+            </div>
+
+            <div class="grid-layout-22">
+                <div class="grid-desc">
+                    <div class="project1">
+                        <h5>Ip figyelő</h5>
+                        <p>Egy alkalmazás, ami figyeli az ip-d bármilyen internetes helyiségben tartózkodsz.
+                            Működése: Be van regisztrálva a szoftver a windows regisztrációs bázisába, ezért tudja elindítani magát
+                            mikor elindul a windows. További információkért látogass el <a href="#">ide</a>.
+                        </p>
+                    </div>
+                    <div class="project2">
+                        <h5>Ip figyelő</h5>
+                        <p>Egy alkalmazás, ami figyeli az ip-d bármilyen internetes helyiségben tartózkodsz.
+                            Működése: Be van regisztrálva a szoftver a windows regisztrációs bázisába, ezért tudja elindítani magát
+                            mikor elindul a windows. További információkért látogass el <a href="#">ide</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-goto">
+                    <div class="project1g">
+                        <h5 id="címe">Ip figyelő</h5>
+                        <h5 id="github-icon"><a href="#"><i class="fab fa-github"></i></a></h5>
+                    </div>
+                    <div class="project2g">
+                        <h5 id="címe">C# projekt</h5>
+                        <h5 id="github-icon"><a href="#"><i class="fab fa-github"></i></a></h5>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="grid-footer">
+                <div class="content-footer">
+                    <div>
+                        <a href="#"><i class="fas fa-id-card-alt"></i></a>
+                        <h4>Márk Oldala</h4>
+                    </div>
+
+                    <div>
+                        <h4>Internal links</h4>
+                        <ul>
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Get In Touch</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/mark.bakonyi.90" traget="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/bm_mark8/" target="_blank">instagram</a></li>
+                            <li><a href="tel:+36705571845" target="_blank">My phone number</a></li>
+                            <li><a href="https://wa.me/36705571845/?text=Contact%Website" target="_blank">Whatsapp Me</a></li>
+                            <li><a href="mailto:bakonyimark8@gmail.com?Subject=Development%20Website" target="_blank">My Mail</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Stay Connected</h4>
+                        <input type="email" placeholder="Enter mail" class="input-newsletter">
+                        <button class="submit-newsletter">Sign Up</button>
+                        <ul class="social-footer">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>   
+
+            <script>
+                function showmobilemenu(){
+                    var content=document.getElementById("eztkell").innerHTML;
+                    if(content.style.display=="none"){
+                        content.style.display="block";
+                    }
+                    else{
+                        content.style.display="none";
+                    }
+                }
+            </script>
+
+        </body>
+    </head>
+</html>

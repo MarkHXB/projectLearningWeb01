@@ -1,0 +1,326 @@
+
+@media only screen and (max-width:600px){
+    .nav-content-desktop{
+        display:none;
+    }
+    .menu-bar a{
+        display:flex;
+        float:right;
+    }
+}
+@media only screen and (min-width:601px){
+    .nav-content-desktop ul{
+        display:show;
+    }
+    .menu-bar .fas{
+        display:none;
+    }
+    .nav-content-mobile{
+        display:none;
+    }
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 2200px;
+}
+
+/* Navigation for Mobiles */
+
+.nav-content-mobile{
+    height:70px;
+}
+.nav-content-mobile  li{
+    padding:20px 5px;
+    list-style: none;
+    float:right;
+}
+.nav-content-mobile  li a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    margin-right:60px;
+    font-size:21px;
+    text-shadow: 0 0 10px black;
+}
+#menu-bar-icon{
+    text-decoration: none;
+}
+.menu-bar .fas{
+    color:white;
+    text-shadow: 0 0 4px black;
+    padding:20px;
+}
+
+#menu-bar-button:hover .nav-content-mobile{
+    display:show;
+}
+
+
+
+/*  Navigation  for Desktops*/
+
+#contact-icon{
+    float:left;
+    margin-left:55px;
+    padding:15px;
+}
+#contact-icon .far{
+    font-size:30px;
+    box-shadow:0 0 10px black;
+}
+.nav-content-desktop{
+    height:70px;
+}
+.nav-container ul{
+    margin:0;
+    padding:0;
+}
+.nav-content-desktop  li{
+    padding:20px 5px;
+    list-style: none;
+    float:right;
+}
+.nav-content-desktop  li a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    margin-right:60px;
+    font-size:21px;
+    text-shadow: 0 0 10px black;
+}
+.container{
+    background:url(img/landscape-1.jpg) center center fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:45%;
+}
+
+/* MiddleOfthePageContent */
+
+.container-content{
+    text-align: center;
+    color:white;
+    text-shadow:0 0 10px black;
+    margin:0 auto;
+    position: relative;
+    top:30%;
+    display:block;
+    width: 50%;
+}
+.container-content h1{
+    padding:0 0 20px 0;
+    font-size:50px;
+}
+.container-content-subcim{
+    padding:0 0 15px 0;
+}
+.container-content a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-size:20px;
+    border:1px white solid;
+    padding: 5px;
+    margin-top:12%;
+}
+
+/* Button */
+
+.button-dwn{
+    text-align: center;
+    margin:0 auto;
+}
+.button-dwn .fas{
+    color:white;
+    text-shadow: 0 0 8px black;
+    font-size:30px;
+    position: absolute;
+    bottom:0;
+    transform: translate(-50%, -50%);
+}
+
+/* Grid lvl1 Cím */
+
+.introduction-section{
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin:0 auto;
+}
+
+.introduction-section h1{
+    text-shadow: 0 0 1px black;
+    font-size:40px;
+}
+
+.introduction-section h4{
+    padding:15px;
+    font-size:20px;
+    border-bottom:2px black solid;
+}
+
+/* Grid lvl1 */
+
+.grid-layout-22{
+    height:25%;
+    display:grid;
+    width: 100%;
+    padding:5px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+}
+.grid-desc{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap:35px;
+    place-items: center;
+}
+.grid-desc .project1,.project2{
+    padding:7px;
+    text-align: center;
+    background-color:lightgrey;
+    border-radius: 5px;
+    width: 80%;
+    
+}
+.grid-goto{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;
+}
+.grid-goto .project1g{
+    background:url(img/project-between.png) center center;
+    height:100%;
+}
+.grid-goto .project2g{
+    background:url(img/project-between.png) center center;
+    height:100%;
+}
+.project1g{
+    position: relative;
+
+    height: 100%;
+}
+.project1g #címe{
+    text-align:center;
+    padding:12px;
+    font-size:30px;
+    color:blue;
+    text-shadow: 0 0 4px black;
+    text-transform: uppercase;
+
+}
+.project2g #címe{
+    text-align:center;
+    padding:12px;
+    font-size:30px;
+    color:blue;
+    text-shadow: 0 0 4px black;
+    text-transform: uppercase;
+}
+.project1g #github-icon{
+    text-align: right;
+  
+}
+.project2g #github-icon{
+    float: right;
+    
+}
+.project1g #github-icon .fab{
+    text-shadow:0 0 4px black;
+    font-size:50px;
+    color:white;
+    padding:7px;
+    right:25px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.project2g #github-icon .fab{
+    text-shadow:0 0 4px black;
+    font-size:50px;
+    color:white;
+   position: relative; 
+   right:25px;
+   padding:7px;
+   margin:0;
+   top:40px;
+}
+
+/* Footer */
+
+#grid-footer{
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    margin:80px 0 0 0;
+    position: relative;
+    top:8%;
+}
+.content-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr;
+    column-gap:3em;
+    padding: 80px 0;
+    width: 80%;
+    margin:0 auto;
+}
+.content-footer img{
+    width:40px;
+}
+.content-footer a{
+    text-decoration:none;
+    color:black;
+}
+.content-footer a:hover{
+    color:#666666;
+    transition: 0.25s ease-in;
+}
+.content-footer ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.content-footer ul li{
+    padding: 0 0 8px 0;
+}
+
+.input-newsletter{
+    width:140px;
+    height:30px;
+    display:inline-block;
+    border:1px black solid;
+    box-shadow: 0 0 10px black;
+}
+.submit-newsletter{
+    width:100px;
+    height:35px;
+    margin:0 0 0 10px;
+    background-color:#000000;
+    color:white;
+    font-size:16px;
+    text-transform: uppercase;
+    border:1px black solid;
+    box-shadow: 0 0 10px black;
+}
+
+.social-footer li{
+ display:inline;
+}
+h4{
+    font-size:18px;
+    text-transform: uppercase;
+}
+.social-footer .fab, .fas{
+    font-size:28px;
+    padding:20px;
+}
+
